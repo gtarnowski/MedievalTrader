@@ -1,0 +1,26 @@
+{
+    "UxmlGuid": "40c0d925cbad9499781bf98ee9b0ebd4",
+    "UxmlPath": "Assets/UI/BuildingDialog.uxml",
+    "CanvasX": 0,
+    "CanvasY": 0,
+    "CanvasWidth": 350,
+    "CanvasHeight": 550,
+    "ZoomScale": 0.5,
+    "PanOffset": {
+        "x": 81.83331298828125,
+        "y": 146.41665649414063
+    },
+    "CanvasBackgroundOpacity": 1.0,
+    "CanvasBackgroundMode": 0,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": ""
+}

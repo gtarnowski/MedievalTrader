@@ -1,0 +1,13 @@
+{
+  "materials": [
+    {
+      "id": 100,
+      "name": "Steel Bar",
+      "spriteName": "steel_bar",
+      "productionCost": 10,
+      "building": {
+        "id": 10
+      }
+    }
+  ]
+}

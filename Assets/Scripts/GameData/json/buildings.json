@@ -1,0 +1,85 @@
+{
+  "buildings": [
+    {
+      "id": 1,
+      "name": "Mine",
+      "spriteName": "mine",
+      "products": [
+        1,2,3,4
+      ],
+      "price": 1200,
+      "type": "Mines"
+    },
+    {
+      "id": 2,
+      "name": "Woodcutter",
+      "spriteName": "woodcutter",
+      "products": [5],
+      "price": 1000,
+      "type": "Mines"
+    },
+    {
+      "id": 10,
+      "name": "Small Warehouse",
+      "spriteName": "small_warehouse",
+      "type": "Warehouses",
+      "price": 1000
+    },
+    {
+      "id": 11,
+      "name": "Medium Warehouse",
+      "spriteName": "medium_warehouse",
+      "type": "Warehouses",
+      "price": 1500
+    },
+    {
+      "id": 12,
+      "name": "Big Warehouse",
+      "spriteName": "big_warehouse",
+      "type": "Warehouses",
+      "price": 2000
+    },
+    {
+      "id": 20,
+      "name": "Saw Mill",
+      "spriteName": "saw_mill",
+      "type": "Facilities",
+      "price": 1500
+    },
+    {
+      "id": 21,
+      "name": "Mill",
+      "spriteName": "mill",
+      "type": "Facilities",
+      "price": 1200
+    },
+    {
+      "id": 22,
+      "name": "Metalwork's",
+      "spriteName": "metalworks",
+      "type": "Facilities",
+      "price": 2200
+    },
+    {
+      "id": 23,
+      "name": "Farm",
+      "spriteName": "farm",
+      "type": "Facilities",
+      "price": 1000
+    },
+    {
+      "id": 30,
+      "name": "Small Stable",
+      "spriteName": "small_stable",
+      "type": "Transportation",
+      "price": 900
+    },
+    {
+      "id": 31,
+      "name": "Medium Stable",
+      "spriteName": "medium_stable",
+      "type": "Transportation",
+      "price": 1200
+    }
+  ]
+}

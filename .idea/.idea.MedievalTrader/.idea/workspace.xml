@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="681d2ba6-9855-4301-8130-3533dd830826" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/json/products.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/json/resources.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/36/20b56b38/BoundsInt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/json/buildings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/json/materials.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/Units.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/fd/0dcea0e1/TextAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/Details.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BuildingDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BuildingTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid/GridBuildMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/InjectResources.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/GameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/UnitType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/Resource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Building.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DialogManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/MapInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/d3/23c2398b/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/ModelType.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/GridController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Materials.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Material.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JSONReader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/materials.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/resources.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/buildings.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/products.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Buildings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Building.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Resources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Material.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/json/materials.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Building.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Buildings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/BuildingModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MaterialModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Materials.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/ProductModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/ResourceModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Resources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/json/products.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Products.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/json/data.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Model.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/Details.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/Helpers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" />
+        <option value="$PROJECT_DIR$/Assets/TestClass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/MapInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/DialogManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Units.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/json/resources.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/InjectResources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ModelTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ModelType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/GameData.cs" />
+        <option value="$PROJECT_DIR$/Assets/BuildingDialog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameData/json/buildings.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridBuildMode.cs" />
+        <option value="$PROJECT_DIR$/Assets/BuildingTypes.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZABrPS4DO0TlMLKaPRWazDv1my" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="681d2ba6-9855-4301-8130-3533dd830826" name="Default Changelist" comment="" />
+      <created>1584272215446</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584272215446</updated>
+      <workItem from="1584272217076" duration="6727000" />
+      <workItem from="1584355620393" duration="1202000" />
+      <workItem from="1584435819497" duration="1515000" />
+      <workItem from="1585140532423" duration="2021000" />
+      <workItem from="1585316292865" duration="2228000" />
+      <workItem from="1585382503634" duration="3013000" />
+      <workItem from="1585762743671" duration="556000" />
+      <workItem from="1585820587917" duration="3188000" />
+      <workItem from="1585852621561" duration="1011000" />
+      <workItem from="1585998589155" duration="1102000" />
+      <workItem from="1586020076450" duration="8401000" />
+      <workItem from="1586083365543" duration="7653000" />
+      <workItem from="1586265242031" duration="9565000" />
+      <workItem from="1586605534191" duration="448000" />
+      <workItem from="1586689672645" duration="5374000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="510" y="188" key="RiderGenerateDialog" timestamp="1586729083809">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state x="510" y="188" key="RiderGenerateDialog/0.23.1680.956@0.23.1680.956" timestamp="1586729083809" />
+    <state x="501" y="263" width="678" height="476" key="find.popup" timestamp="1586114618597">
+      <screen x="0" y="23" width="1680" height="964" />
+    </state>
+    <state x="501" y="263" width="678" height="476" key="find.popup/0.23.1680.964@0.23.1680.964" timestamp="1586114618597" />
+  </component>
+</project>

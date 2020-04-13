@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "name": "Steel Ore",
+      "spriteName": "steel_ore",
+      "quantity": 1000
+    },
+    {
+      "id": 2,
+      "name": "Copper Ore",
+      "spriteName": "copper_ore",
+      "quantity": 800
+    }
+  ]
+}

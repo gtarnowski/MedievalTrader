@@ -1,0 +1,53 @@
+{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "BuilderDocument",
+        "m_EditorClassIdentifier": "",
+        "m_VisualTreeAssetBackup": {
+            "instanceID": 0
+        },
+        "m_OpenendVisualTreeAssetOldPath": "Assets/UI/BuildingDialog.uxml",
+        "m_OpenendMainStyleSheetOldPath": "Assets/UI/BuildingDialog.uss",
+        "m_MainStyleSheetBackup": {
+            "instanceID": 0
+        },
+        "m_VisualTreeAsset": {
+            "fileID": 9197481963319205126,
+            "guid": "40c0d925cbad9499781bf98ee9b0ebd4",
+            "type": 3
+        },
+        "m_MainStyleSheet": {
+            "fileID": 7433441132597879392,
+            "guid": "f5712b9ccf3b4498aa051b0cbe3efaec",
+            "type": 3
+        },
+        "m_CurrentCanvasTheme": 0,
+        "m_Settings": {
+            "UxmlGuid": "40c0d925cbad9499781bf98ee9b0ebd4",
+            "UxmlPath": "Assets/UI/BuildingDialog.uxml",
+            "CanvasX": 0,
+            "CanvasY": 0,
+            "CanvasWidth": 350,
+            "CanvasHeight": 550,
+            "ZoomScale": 0.5,
+            "PanOffset": {
+                "x": 81.83331298828125,
+                "y": 146.41665649414063
+            },
+            "CanvasBackgroundOpacity": 1.0,
+            "CanvasBackgroundMode": 0,
+            "CanvasBackgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 255.0
+            },
+            "CanvasBackgroundImage": {
+                "instanceID": 0
+            },
+            "CanvasBackgroundImageScaleMode": 1,
+            "CanvasBackgroundCameraName": ""
+        }
+    }
+}

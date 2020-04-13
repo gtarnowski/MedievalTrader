@@ -1,0 +1,12 @@
+.building-dialog {
+    display: flex;
+}
+
+.building-dialog-header__button {
+    opacity: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -unity-font: url('Library/unity default resources');
+}
