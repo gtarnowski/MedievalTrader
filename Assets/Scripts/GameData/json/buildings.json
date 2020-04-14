@@ -8,7 +8,8 @@
         1,2,3,4
       ],
       "price": 1200,
-      "type": "Mines"
+      "type": "Mines",
+      "size": 2
     },
     {
       "id": 2,
@@ -16,70 +17,80 @@
       "spriteName": "woodcutter",
       "products": [5],
       "price": 1000,
-      "type": "Mines"
+      "type": "Mines",
+      "size": 2
     },
     {
       "id": 10,
       "name": "Small Warehouse",
-      "spriteName": "small_warehouse",
+      "spriteName": "warehouse_small",
       "type": "Warehouses",
-      "price": 1000
+      "price": 1000,
+      "size": 1      
     },
     {
       "id": 11,
       "name": "Medium Warehouse",
-      "spriteName": "medium_warehouse",
+      "spriteName": "warehouse_medium",
       "type": "Warehouses",
-      "price": 1500
+      "price": 1500,
+      "size": 2
     },
     {
       "id": 12,
       "name": "Big Warehouse",
-      "spriteName": "big_warehouse",
+      "spriteName": "warehouse_big",
       "type": "Warehouses",
-      "price": 2000
+      "price": 2000,
+      "size": 3
     },
     {
       "id": 20,
       "name": "Saw Mill",
       "spriteName": "saw_mill",
       "type": "Facilities",
-      "price": 1500
+      "price": 1500,
+      "size": 2
     },
     {
       "id": 21,
       "name": "Mill",
       "spriteName": "mill",
       "type": "Facilities",
-      "price": 1200
+      "price": 1200,
+      "size": 2
     },
     {
       "id": 22,
       "name": "Metalwork's",
       "spriteName": "metalworks",
       "type": "Facilities",
-      "price": 2200
+      "price": 2200,
+      "size": 2
     },
     {
       "id": 23,
       "name": "Farm",
       "spriteName": "farm",
       "type": "Facilities",
-      "price": 1000
+      "price": 1000,
+      "size": 2
     },
     {
       "id": 30,
       "name": "Small Stable",
       "spriteName": "small_stable",
       "type": "Transportation",
-      "price": 900
+      "price": 900,
+      "size": 2
     },
     {
       "id": 31,
       "name": "Medium Stable",
       "spriteName": "medium_stable",
       "type": "Transportation",
-      "price": 1200
+      "price": 1200,
+      "size": 2
     }
   ]
 }

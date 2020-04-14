@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 120be8f36103a4b2a83cf80584690cf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4607423967380988176
+    second: blueprint-tilemap_0
+  - first:
+      213: -2646160211510847690
+    second: blueprint-tilemap_1
+  - first:
+      213: 8547340202360804218
+    second: blueprint-tilemap_2
+  - first:
+      213: 724272142111139817
+    second: blueprint-tilemap_3
+  - first:
+      213: -3116838797185289303
+    second: blueprint-tilemap_4
+  - first:
+      213: -3695045005492346298
+    second: blueprint-tilemap_5
+  - first:
+      213: 438357433805321847
+    second: blueprint-tilemap_6
+  - first:
+      213: -1027389692630528392
+    second: blueprint-tilemap_7
+  - first:
+      213: 8786863414282753691
+    second: blueprint-tilemap_8
+  - first:
+      213: 9055483068781045161
+    second: blueprint-tilemap_9
+  - first:
+      213: 7822475527013291334
+    second: blueprint-tilemap_10
+  - first:
+      213: 2932871498640188568
+    second: blueprint-tilemap_11
+  - first:
+      213: 7592754211348233239
+    second: blueprint-tilemap_12
+  - first:
+      213: 8190135253078087297
+    second: blueprint-tilemap_13
+  - first:
+      213: 3705675452456816008
+    second: blueprint-tilemap_14
+  - first:
+      213: 3290355952942056246
+    second: blueprint-tilemap_15
+  - first:
+      213: -4521682727482786891
+    second: blueprint-tilemap_16
+  - first:
+      213: 8901186919089110972
+    second: blueprint-tilemap_17
+  - first:
+      213: -2982125691839815641
+    second: blueprint-tilemap_18
+  - first:
+      213: 2176579686680123867
+    second: blueprint-tilemap_19
+  - first:
+      213: -8857692303385967021
+    second: blueprint-tilemap_20
+  - first:
+      213: -8597500937924945842
+    second: blueprint-tilemap_21
+  - first:
+      213: -2969153492759179552
+    second: blueprint-tilemap_22
+  - first:
+      213: 7284924916778011184
+    second: blueprint-tilemap_23
+  - first:
+      213: -6588035521574946928
+    second: blueprint-tilemap_24
+  - first:
+      213: -2866296626964251545
+    second: blueprint-tilemap_25
+  - first:
+      213: -7192836006230124497
+    second: blueprint-tilemap_26
+  - first:
+      213: -5751371183380676540
+    second: blueprint-tilemap_27
+  - first:
+      213: -1987010941992118590
+    second: blueprint-tilemap_28
+  - first:
+      213: 1056773345480226469
+    second: blueprint-tilemap_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blueprint-tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 160
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa33eba805e7c47f2b2720dd2cf184cb
+      internalID: -4607423967380988176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueprint-tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 160
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ace21b4f3f341b0b04c803cc0c4e2b
+      internalID: -2646160211510847690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 1
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

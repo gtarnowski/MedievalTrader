@@ -7,6 +7,7 @@ public class Unit {
 	
 	// For buildings, mines, warehouses
 	public int price;
+	public int size;
 
 	// For shops products
 	public int sellingPrice;

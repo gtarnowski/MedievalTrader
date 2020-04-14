@@ -56,12 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Building.cs" />
-     <Compile Include="Assets\BuildingDialog.cs" />
-     <Compile Include="Assets\BuildingTypes.cs" />
-     <Compile Include="Assets\DialogManager.cs" />
      <Compile Include="Assets\Scripts\Enums\ModelType.cs" />
      <Compile Include="Assets\Scripts\Enums\UnitType.cs" />
+     <Compile Include="Assets\Scripts\GameData\BuildingTypes.cs" />
      <Compile Include="Assets\Scripts\GameData\GameData.cs" />
      <Compile Include="Assets\Scripts\GameData\InjectResources.cs" />
      <Compile Include="Assets\Scripts\GameData\Unit.cs" />
@@ -71,8 +68,11 @@
      <Compile Include="Assets\Scripts\GameManager\MapInspector.cs" />
      <Compile Include="Assets\Scripts\Grid\GridBuildMode.cs" />
      <Compile Include="Assets\Scripts\Helpers\Helpers.cs" />
+     <Compile Include="Assets\Scripts\Models\Building.cs" />
      <Compile Include="Assets\Scripts\Models\Details.cs" />
      <Compile Include="Assets\Scripts\Models\Resource.cs" />
+     <Compile Include="Assets\Scripts\UI\BuildingDialog.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogManager.cs" />
      <Compile Include="Assets\Scripts\UI\Tooltip.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

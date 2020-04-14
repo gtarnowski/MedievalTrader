@@ -26,6 +26,7 @@ public class GameData : MonoBehaviour {
 
   private void ReadBuildings() {
     buildingsJson = JsonUtility.FromJson<Units>(buildingsJsonFile.text);
+    
   }
 
   private void ReadResources() {
@@ -34,22 +35,6 @@ public class GameData : MonoBehaviour {
 
   private void ReadProducts() {
     productsJson = JsonUtility.FromJson<Units>(productsJsonFile.text);
-  }
-
-  public Units GetMaterials() {
-    return materialsJson;
-  }
-  
-  public Units GetBuildings() {
-    return buildingsJson;
-  }
-  
-  public Units GetResources() {
-    return resourcesJson;
-  }
-  
-  public Units GetProducts() {
-    return productsJson;
   }
 
   public static Units GetUnitByType(ModelType type) {

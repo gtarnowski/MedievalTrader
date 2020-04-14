@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour {
-	public DialogManager dialogManager;
+	public GameObject mainCamera;
+	public BuildingDialog buildingDialog;
 	void Update() {
-		if (Input.GetKey(KeyCode.Escape)) {
-			GameObject.FindWithTag("MainCamera").GetComponent<CameraController>().SetDisableController();
-			dialogManager.buildingDialog.GetComponent<BuildingDialog>().OnCloseDialog();
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			mainCamera.GetComponent<CameraController>().SetDisableController();
+			buildingDialog.OnToggleDialog(true);
 		}
 
-		if (Input.GetMouseButtonDown(1)) {
-			dialogManager.OnOpenBuildingDialog();
+		if (Input.GetMouseButtonDown((int) MouseButton.RightMouse)) {
+			buildingDialog.OnToggleDialog(false);
 		}
 	}
 	private void OnGUI() {
 		if (Event.current.type == EventType.MouseDown) {
-			GameObject.FindWithTag("MainCamera").GetComponent<CameraController>().SetDisableController();
+			mainCamera.GetComponent<CameraController>().SetDisableController();
 		}
 	}
 }
