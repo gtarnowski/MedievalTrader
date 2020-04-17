@@ -78,19 +78,27 @@
     },
     {
       "id": 30,
-      "name": "Small Stable",
-      "spriteName": "small_stable",
+      "name": "Small Stables",
+      "spriteName": "stables_small",
       "type": "Transportation",
       "price": 900,
-      "size": 2
+      "size": 1
     },
     {
       "id": 31,
-      "name": "Medium Stable",
-      "spriteName": "medium_stable",
+      "name": "Medium Stables",
+      "spriteName": "stables_medium",
       "type": "Transportation",
       "price": 1200,
       "size": 2
+    },
+    {
+      "id": 32,
+      "name": "Big Stables",
+      "spriteName": "stables_big",
+      "type": "Transportation",
+      "price": 1200,
+      "size": 3
     }
   ]
 }

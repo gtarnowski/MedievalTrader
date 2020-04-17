@@ -8,11 +8,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Enums" t="Include">
+            <e p="AlertMessages.cs" t="Include" />
             <e p="ModelType.cs" t="Include" />
             <e p="UnitType.cs" t="Include" />
           </e>
           <e p="GameData" t="Include">
-            <e p="BuildingTypes.cs" t="Include" />
             <e p="GameData.cs" t="Include" />
             <e p="InjectResources.cs" t="Include" />
             <e p="Unit.cs" t="Include" />
@@ -20,11 +20,14 @@
           </e>
           <e p="GameManager" t="Include">
             <e p="CameraController.cs" t="Include" />
+            <e p="Economy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
-            <e p="MapInspector.cs" t="Include" />
+            <e p="GameTime.cs" t="Include" />
+            <e p="GeneralEvents.cs" t="Include" />
           </e>
           <e p="Grid" t="Include">
             <e p="GridBuildMode.cs" t="Include" />
+            <e p="MapInspector.cs" t="Include" />
           </e>
           <e p="Helpers" t="Include">
             <e p="Helpers.cs" t="Include" />
@@ -35,9 +38,11 @@
             <e p="Resource.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="BuildingDialog.cs" t="Include" />
-            <e p="DialogManager.cs" t="Include" />
+            <e p="Alert.cs" t="Include" />
+            <e p="BuildingTypes.cs" t="Include" />
+            <e p="ManageDialog.cs" t="Include" />
             <e p="Tooltip.cs" t="Include" />
+            <e p="TopBar.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -67,10 +72,6 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
-        </e>
-        <e p="UI" t="Include">
-          <e p="BuildingDialog.uss" t="Include" />
-          <e p="BuildingDialog.uxml" t="Include" />
         </e>
       </e>
       <e p="MedievalTrader.sln" t="IncludeFlat" />

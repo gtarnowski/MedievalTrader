@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class GridBuildMode : MonoBehaviour {
 	private static GridBuildMode instance;
 	
-	public BuildingDialog buildingDialog;
+	public ManageDialog manageDialog;
 	[Header("Tiles")]
 	public Tilemap hoverTileMap;
 	public Tilemap resourcesMap;
@@ -31,7 +31,7 @@ public class GridBuildMode : MonoBehaviour {
 	private RectInt cell;
 
 	private GameObject[] resources;
-	private Unit selectedBuilding;
+	private Unit selectedBuildingUnit;
 
 	private bool canBuild = true;
 	
@@ -51,20 +51,22 @@ public class GridBuildMode : MonoBehaviour {
 	}
 
 	private void Build() {
-		if (!canBuild || buildingDialog.IsPointerOverBuildingDialog()) return;
+		if (!canBuild || manageDialog.IsPointerOverBuildingDialog()) return;
+		if (Economy.GetCoinsValue() < selectedBuildingUnit.price) return;
+
 		GameObject newBuildingObject = Instantiate(buildingPrefab, createdBuildings.transform, true);
 		Building newBuilding = newBuildingObject.GetComponent<Building>();
-		int resources = 0;
+		int totalResources = 0;
+		
 		foreach (Vector2Int currentAreaCell in currentArea.allPositionsWithin) {
-			
 			Details details = GetBoundsInfo((Vector3Int) currentAreaCell);
 			if (details) {
-				resources += details.unit.quantity;
+				totalResources += details.unit.quantity;
 			}
 			buildingsPositions.Add(currentAreaCell);
 		}
 		buildingsTileMap.SetTile(currentCell, currentBuildingTile);
-		newBuilding.SetInitialValues(currentArea, selectedBuilding, resources);
+		newBuilding.SetInitialValues(currentArea, selectedBuildingUnit, totalResources);
 	}
 
 	public void RefreshBuildBound() {
@@ -114,7 +116,7 @@ public class GridBuildMode : MonoBehaviour {
 	}
 
 	private RectInt CreateRectangleArea(Vector3Int cell) {
-		int size = selectedBuilding?.size ?? 1;
+		int size = selectedBuildingUnit?.size ?? 1;
 		return new RectInt(cell.x, cell.y, size, size);
 	}
 
@@ -136,7 +138,7 @@ public class GridBuildMode : MonoBehaviour {
 	}
 
 	public void SetSelectedBuilding(Unit building) {
-		selectedBuilding = building;
+		selectedBuildingUnit = building;
 		foreach (var tile in buildingTiles) {
 			if (tile.name == building.spriteName) {
 				currentBuildingTile = tile;

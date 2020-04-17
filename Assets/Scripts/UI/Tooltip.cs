@@ -5,14 +5,12 @@ public class Tooltip : MonoBehaviour {
 
 	private static Tooltip instance;
 	private Camera uiCamera;
-	
-	private Text tooltipText;
-	private RectTransform backgroundRectTransform;
+
+	public RectTransform backgroundRectTransform;
+	public Text tooltipText;
 
 	private void Awake() {
 		instance = this;
-		backgroundRectTransform = transform.Find("Background").GetComponent<RectTransform>();
-		tooltipText = transform.Find("Text").GetComponent<Text>();
 		ShowTooltip("Random Text");
 		HideTooltip();
 	}

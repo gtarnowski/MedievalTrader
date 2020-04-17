@@ -3,15 +3,15 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour {
 	public GameObject mainCamera;
-	public BuildingDialog buildingDialog;
+	public ManageDialog manageDialog;
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			mainCamera.GetComponent<CameraController>().SetDisableController();
-			buildingDialog.OnToggleDialog(true);
+			manageDialog.OnToggleDialog(true);
 		}
 
-		if (Input.GetMouseButtonDown((int) MouseButton.RightMouse)) {
-			buildingDialog.OnToggleDialog(false);
+		if (Input.GetMouseButtonDown((int) MouseButton.RightMouse) || Input.GetKeyDown(KeyCode.B)) {
+			manageDialog.OnToggleDialog(false);
 		}
 	}
 	private void OnGUI() {
