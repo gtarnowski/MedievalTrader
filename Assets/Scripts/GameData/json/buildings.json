@@ -8,8 +8,9 @@
         1,2,3,4
       ],
       "price": 1200,
-      "type": "Mines",
-      "size": 2
+      "category": "Mines",
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 2,
@@ -17,88 +18,99 @@
       "spriteName": "woodcutter",
       "products": [5],
       "price": 1000,
-      "type": "Mines",
-      "size": 2
+      "category": "Mines",
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 10,
       "name": "Small Warehouse",
       "spriteName": "warehouse_small",
-      "type": "Warehouses",
+      "category": "Warehouses",
       "price": 1000,
-      "size": 1      
+      "size": 1,
+      "type": "Building"
     },
     {
       "id": 11,
       "name": "Medium Warehouse",
       "spriteName": "warehouse_medium",
-      "type": "Warehouses",
+      "category": "Warehouses",
       "price": 1500,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 12,
       "name": "Big Warehouse",
       "spriteName": "warehouse_big",
-      "type": "Warehouses",
+      "category": "Warehouses",
       "price": 2000,
-      "size": 3
+      "size": 3,
+      "type": "Building"
     },
     {
       "id": 20,
       "name": "Saw Mill",
       "spriteName": "saw_mill",
-      "type": "Facilities",
+      "category": "Facilities",
       "price": 1500,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 21,
       "name": "Mill",
       "spriteName": "mill",
-      "type": "Facilities",
+      "category": "Facilities",
       "price": 1200,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 22,
       "name": "Metalwork's",
       "spriteName": "metalworks",
-      "type": "Facilities",
+      "category": "Facilities",
       "price": 2200,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 23,
       "name": "Farm",
       "spriteName": "farm",
-      "type": "Facilities",
+      "category": "Facilities",
       "price": 1000,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 30,
       "name": "Small Stables",
       "spriteName": "stables_small",
-      "type": "Transportation",
+      "category": "Transportation",
       "price": 900,
-      "size": 1
+      "size": 1,
+      "type": "Building"
     },
     {
       "id": 31,
       "name": "Medium Stables",
       "spriteName": "stables_medium",
-      "type": "Transportation",
+      "category": "Transportation",
       "price": 1200,
-      "size": 2
+      "size": 2,
+      "type": "Building"
     },
     {
       "id": 32,
       "name": "Big Stables",
       "spriteName": "stables_big",
-      "type": "Transportation",
+      "category": "Transportation",
       "price": 1200,
-      "size": 3
+      "size": 3,
+      "type": "Building"
     }
   ]
 }

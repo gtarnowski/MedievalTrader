@@ -18,7 +18,7 @@ public class BuildingTypes : MonoBehaviour {
 		buildings = GameData.GetUnitByType(ModelType.Buildings);
 		foreach (var building in buildings.buildings) {
 			// Get Layout to inject button
-			GameObject buildingTypeLayout = GetLayout(building.type);
+			GameObject buildingTypeLayout = GetLayout(building.category);
 			if (!buildingTypeLayout) return;
 
 			// Clone button and insert to selected building type

@@ -7,8 +7,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="MouseMoveController.cs" t="Include" />
+          </e>
           <e p="Enums" t="Include">
             <e p="AlertMessages.cs" t="Include" />
+            <e p="DialogType.cs" t="Include" />
             <e p="ModelType.cs" t="Include" />
             <e p="UnitType.cs" t="Include" />
           </e>
@@ -19,9 +24,9 @@
             <e p="Units.cs" t="Include" />
           </e>
           <e p="GameManager" t="Include">
-            <e p="CameraController.cs" t="Include" />
             <e p="Economy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="GameStore.cs" t="Include" />
             <e p="GameTime.cs" t="Include" />
             <e p="GeneralEvents.cs" t="Include" />
           </e>

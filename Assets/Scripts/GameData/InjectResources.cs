@@ -7,6 +7,7 @@ public class InjectResources : MonoBehaviour {
 	public GameObject injectedResources;
 
 	void Start() {
+		print(1);
 		Units resources = GameData.GetUnitByType(ModelType.Resources);
 		CreateResourcesPrefabs(resources);
 	}
@@ -20,10 +21,12 @@ public class InjectResources : MonoBehaviour {
 					GameObject resourceInstance = Instantiate(resourcePrefab);
 					resourceInstance.transform.SetParent(injectedResources.transform);
 					Details details = resourceInstance.GetComponent<Details>();
-					details.SetPosition(position);
 					details.SetUnit(unit);
+					details.SetPosition(position);
 				}
 			}
 		}
 	}
+	
+	
 }

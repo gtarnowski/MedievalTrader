@@ -8,11 +8,7 @@ public class Economy : MonoBehaviour {
 	private void Awake() {
 		instance = this;
 	}
-
-	private void Update() {
-		print(instance.coins);
-	}
-
+	
 	public static void DecreaseCoins(int decreaseValue) {
 		instance.coins -= decreaseValue;
 	}

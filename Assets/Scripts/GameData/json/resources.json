@@ -4,19 +4,25 @@
       "id": 1,
       "name": "Tree",
       "spriteName": "tree",
-      "quantity": 500
+      "count": 500,
+      "size": 1,
+      "type": "Resource"
     },
     {
       "id": 2,
       "name": "Iron Ore",
       "spriteName": "iron_ore",
-      "quantity": 800
+      "count": 800,
+      "size": 1,
+      "type": "Resource"
     },
     {
       "id": 3,
       "name": "Copper Ore",
       "spriteName": "copper_ore",
-      "quantity": 800
+      "count": 800,
+      "size": 1,
+      "type": "Resource"
     }
   ]
 }

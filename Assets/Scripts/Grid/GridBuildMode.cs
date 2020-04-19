@@ -35,11 +35,7 @@ public class GridBuildMode : MonoBehaviour {
 
 	private bool canBuild = true;
 	
-	public List<Vector2Int> buildingsPositions = new List<Vector2Int>();
-	
-	private void Start() {
-		instance = this;
-	}
+	private void Start() => instance = this;
 
 	void Update() {
 		if (!enableBuildMode) return;
@@ -54,29 +50,23 @@ public class GridBuildMode : MonoBehaviour {
 		if (!canBuild || manageDialog.IsPointerOverBuildingDialog()) return;
 		if (Economy.GetCoinsValue() < selectedBuildingUnit.price) return;
 
-		GameObject newBuildingObject = Instantiate(buildingPrefab, createdBuildings.transform, true);
-		Building newBuilding = newBuildingObject.GetComponent<Building>();
-		int totalResources = 0;
+		GameObject newBuildingObject = Instantiate(
+			buildingPrefab,
+			createdBuildings.transform,
+			true
+		);
 		
-		foreach (Vector2Int currentAreaCell in currentArea.allPositionsWithin) {
-			Details details = GetBoundsInfo((Vector3Int) currentAreaCell);
-			if (details) {
-				totalResources += details.unit.quantity;
-			}
-			buildingsPositions.Add(currentAreaCell);
-		}
 		buildingsTileMap.SetTile(currentCell, currentBuildingTile);
-		newBuilding.SetInitialValues(currentArea, selectedBuildingUnit, totalResources);
+		
+		newBuildingObject.GetComponent<Building>()
+			.SetInitialValues(currentArea, resourcesMap, selectedBuildingUnit);
 	}
 
 	public void RefreshBuildBound() {
-		// Get mouse position
-		Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		
 		// mark current position as old
 		previousCell = currentCell;
 		// set new position
-		currentCell = hoverTileMap.WorldToCell(worldPosition);
+		currentCell = MouseMoveController.GetMousePositionOnTileMap(hoverTileMap);
 		
 		// build rectangles
 		previousArea = CreateRectangleArea(previousCell);
@@ -85,7 +75,7 @@ public class GridBuildMode : MonoBehaviour {
 		foreach (Vector2Int previousAreaCell in previousArea.allPositionsWithin) {
 			bool includes = false;
 			foreach (Vector2Int currentAreaCell in currentArea.allPositionsWithin) {
-				bool isInBuildingsPositions = buildingsPositions.Contains(currentAreaCell);
+				bool isInBuildingsPositions = GameStore.GetAllBuildingsPositions().Contains(currentAreaCell);
 				if (isInBuildingsPositions) {
 					canBuild = false;
 				}
@@ -119,24 +109,7 @@ public class GridBuildMode : MonoBehaviour {
 		int size = selectedBuildingUnit?.size ?? 1;
 		return new RectInt(cell.x, cell.y, size, size);
 	}
-
-	private Details GetBoundsInfo(Vector3Int position) {
-		TileBase tileBase = resourcesMap.GetTile(position);
-		if (tileBase) {
-			foreach (GameObject resourceInstance in GetResources()) {
-				Details details = resourceInstance.GetComponent<Details>();
-				if (details.IsOverlapping(position)) {
-					return details;
-				}
-			}
-		}
-		return null;
-	}
 	
-	private GameObject[] GetResources() {
-		return GameObject.FindGameObjectsWithTag("Resource");
-	}
-
 	public void SetSelectedBuilding(Unit building) {
 		selectedBuildingUnit = building;
 		foreach (var tile in buildingTiles) {

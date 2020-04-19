@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7709596836960096488}
   - component: {fileID: -1581598479703360502}
+  - component: {fileID: -8362561876120643463}
   m_Layer: 0
   m_Name: Building
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,3 +44,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06903e9ac897b448489daf9675bcfe6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isProducing: 0
+--- !u!114 &-8362561876120643463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372616287321092194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02856e353037434993b8b7e74d4eea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
+  dimensions:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  unit:
+    id: 0
+    name: 
+    spriteName: 
+    type: 
+    price: 0
+    size: 0
+    category: 
+    sellingPrice: 0
+    count: 0
+  tile: {fileID: 0}

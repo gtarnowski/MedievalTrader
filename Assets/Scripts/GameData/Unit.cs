@@ -1,3 +1,5 @@
+using UnityEngine;
+
 [System.Serializable]
 public class Unit {
 	public int id;
@@ -8,10 +10,11 @@ public class Unit {
 	// For buildings, mines, warehouses
 	public int price;
 	public int size;
+	public string category;
 
 	// For shops products
 	public int sellingPrice;
 	
 	// For materials, resources
-	public int quantity;
+	public int count;
 }

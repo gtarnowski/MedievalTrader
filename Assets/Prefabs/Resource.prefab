@@ -44,9 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02856e353037434993b8b7e74d4eea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 
   tileX: 0
   tileY: 0
   quantityLeft: 0
+  unit:
+    id: 0
+    name: 
+    spriteName: 
+    type: 
+    price: 0
+    size: 0
+    sellingPrice: 0
+    quantity: 0
+  tile: {fileID: 0}
 --- !u!114 &8628411645878145207
 MonoBehaviour:
   m_ObjectHideFlags: 0

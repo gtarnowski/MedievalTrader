@@ -26,7 +26,6 @@ public class GameData : MonoBehaviour {
 
   private void ReadBuildings() {
     buildingsJson = JsonUtility.FromJson<Units>(buildingsJsonFile.text);
-    
   }
 
   private void ReadResources() {

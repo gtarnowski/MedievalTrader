@@ -1,6 +1,6 @@
 public enum UnitType {
-		Mines,
-		Warehouses,
-		Facilities,
-		Transportation
+		Building,
+		Resource,
+		Product,
+		Material
 }

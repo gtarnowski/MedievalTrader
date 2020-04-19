@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Building : MonoBehaviour {
 	private RectInt buildingMapBounds;
-	private Unit buildingUnit;
 
 	private int totalResources;
 	private int resourcesLeft;
@@ -15,12 +15,6 @@ public class Building : MonoBehaviour {
 	private float productionSpeed = 2;
 
 	private const int MaxProductionSize = 3;
-
-	private Unit currentProductionUnit;
-
-	private void Start() {
-		Economy.DecreaseCoins(buildingUnit.price);
-	}
 
 	private void Update() {
 		if (!isProducing) return;
@@ -39,7 +33,8 @@ public class Building : MonoBehaviour {
 	}
 
 	private void ReduceCoins() {
-		Economy.DecreaseCoins(currentProductionUnit.price);
+		Details details = GetComponent<Details>();
+		Economy.DecreaseCoins(details.unit.price);
 	}
 
 	private void AddToWarehouse() {
@@ -60,11 +55,27 @@ public class Building : MonoBehaviour {
 		isProducing = !isProducing;
 	}
 
-	public void SetInitialValues(RectInt mapBounds, Unit unit, int resources) {
-		buildingMapBounds = mapBounds;
-		buildingUnit = unit;
-
+	private void CalculateTotalResources(Tilemap tileMap) {
+		int resources = 0;
+		foreach (var boundCell in buildingMapBounds.allPositionsWithin) {
+			Details details = Helpers.GetResourceDetailsFromMap((Vector3Int) boundCell, tileMap);
+			if (details) {
+				totalResources += details.unit.count;
+			}
+			GameStore.SetBuildingPosition(boundCell);
+		}
 		totalResources = resources;
 		resourcesLeft = resources;
+	}
+
+	public void SetInitialValues(RectInt mapBounds, Tilemap tileMap, Unit unit) {
+		buildingMapBounds = mapBounds;
+		
+		
+		Economy.DecreaseCoins(unit.price);
+		Details details = GetComponent<Details>();
+		details.SetUnit(unit);
+		details.SetDimension(mapBounds);
+		CalculateTotalResources(tileMap);
 	}
 }

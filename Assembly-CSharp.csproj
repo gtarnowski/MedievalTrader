@@ -56,16 +56,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MouseMoveController.cs" />
      <Compile Include="Assets\Scripts\Enums\AlertMessages.cs" />
+     <Compile Include="Assets\Scripts\Enums\DialogType.cs" />
      <Compile Include="Assets\Scripts\Enums\ModelType.cs" />
      <Compile Include="Assets\Scripts\Enums\UnitType.cs" />
      <Compile Include="Assets\Scripts\GameData\GameData.cs" />
      <Compile Include="Assets\Scripts\GameData\InjectResources.cs" />
      <Compile Include="Assets\Scripts\GameData\Unit.cs" />
      <Compile Include="Assets\Scripts\GameData\Units.cs" />
-     <Compile Include="Assets\Scripts\GameManager\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager\Economy.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameStore.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameTime.cs" />
      <Compile Include="Assets\Scripts\GameManager\GeneralEvents.cs" />
      <Compile Include="Assets\Scripts\Grid\GridBuildMode.cs" />
