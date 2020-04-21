@@ -2,16 +2,23 @@
   "products": [
     {
       "id": 1,
-      "name": "Axe",
-      "spriteName": "axe",
-      "requiredResources": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        }
-      ]
+      "name": "Bucket",
+      "spriteName": "bucket"
+    },
+    {
+      "id": 2,
+      "name": "Woodcutter Axe",
+      "spriteName": "woodcutter_axe"
+    },
+    {
+      "id": 3,
+      "name": "Chest Box",
+      "spriteName": "chest_box"
+    },
+    {
+      "id": 4,
+      "name": "Arrow",
+      "spriteName": "arrow"
     }
   ]
 }

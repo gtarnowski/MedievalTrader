@@ -56,9 +56,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BuildingModeDialog.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MouseMoveController.cs" />
      <Compile Include="Assets\Scripts\Enums\AlertMessages.cs" />
+     <Compile Include="Assets\Scripts\Enums\BuildingCategory.cs" />
      <Compile Include="Assets\Scripts\Enums\DialogType.cs" />
      <Compile Include="Assets\Scripts\Enums\ModelType.cs" />
      <Compile Include="Assets\Scripts\Enums\UnitType.cs" />
@@ -74,14 +76,16 @@
      <Compile Include="Assets\Scripts\Grid\GridBuildMode.cs" />
      <Compile Include="Assets\Scripts\Grid\MapInspector.cs" />
      <Compile Include="Assets\Scripts\Helpers\Helpers.cs" />
+     <Compile Include="Assets\Scripts\Helpers\TileHelper.cs" />
      <Compile Include="Assets\Scripts\Models\Building.cs" />
      <Compile Include="Assets\Scripts\Models\Details.cs" />
      <Compile Include="Assets\Scripts\Models\Resource.cs" />
      <Compile Include="Assets\Scripts\UI\Alert.cs" />
-     <Compile Include="Assets\Scripts\UI\BuildingTypes.cs" />
+     <Compile Include="Assets\Scripts\UI\BuildingDialogCategories.cs" />
      <Compile Include="Assets\Scripts\UI\ManageDialog.cs" />
      <Compile Include="Assets\Scripts\UI\Tooltip.cs" />
      <Compile Include="Assets\Scripts\UI\TopBar.cs" />
+     <Compile Include="Assets\SerializeSprite.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -658,6 +662,16 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.13f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{67D70545-0305-1502-C615-6828AC0B069C}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{7716BD10-FCBA-5CEF-5C76-431A6C7FB10B}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

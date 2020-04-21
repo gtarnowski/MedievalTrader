@@ -1,0 +1,44 @@
+{
+  "manufacturing": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Bucket",
+      "buildingId":  7,
+      "requiredMaterials": [
+        { "materialId":  1, "count": 1 },
+        { "materialId":  2, "count": 1 }
+      ]
+    },
+    {
+      "id": 1,
+      "productId": 2,
+      "productName": "Woodcutter Axe",
+      "buildingId":  7,
+      "requiredMaterials": [
+        { "materialId":  1, "count":  1 },
+        { "materialId":  2, "count":  2 }
+      ]
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productName": "Chest Box",
+      "buildingId":  7,
+      "requiredMaterials": [
+        { "materialId":  1, "count":  2 },
+        { "materialId":  2, "count":  1 }
+      ]
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productName": "Arrow",
+      "buildingId":  8,
+      "requiredMaterials": [
+        { "materialId":  1, "count":  1 },
+        { "materialId":  2, "count":  1 }
+      ]
+    }
+  ]
+}

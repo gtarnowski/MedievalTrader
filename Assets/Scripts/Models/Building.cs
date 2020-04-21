@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class Building : MonoBehaviour {
@@ -58,7 +57,7 @@ public class Building : MonoBehaviour {
 	private void CalculateTotalResources(Tilemap tileMap) {
 		int resources = 0;
 		foreach (var boundCell in buildingMapBounds.allPositionsWithin) {
-			Details details = Helpers.GetResourceDetailsFromMap((Vector3Int) boundCell, tileMap);
+			Details details = TileHelper.GetResourceDetailsFromMap((Vector3Int) boundCell, tileMap);
 			if (details) {
 				totalResources += details.unit.count;
 			}

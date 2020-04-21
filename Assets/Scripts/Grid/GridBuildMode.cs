@@ -8,6 +8,7 @@ public class GridBuildMode : MonoBehaviour {
 	private static GridBuildMode instance;
 	
 	public ManageDialog manageDialog;
+
 	[Header("Tiles")]
 	public Tilemap hoverTileMap;
 	public Tilemap resourcesMap;
@@ -48,7 +49,7 @@ public class GridBuildMode : MonoBehaviour {
 
 	private void Build() {
 		if (!canBuild || manageDialog.IsPointerOverBuildingDialog()) return;
-		if (Economy.GetCoinsValue() < selectedBuildingUnit.price) return;
+		if (!Economy.CanBuy(selectedBuildingUnit.price)) return;
 
 		GameObject newBuildingObject = Instantiate(
 			buildingPrefab,
@@ -71,36 +72,31 @@ public class GridBuildMode : MonoBehaviour {
 		// build rectangles
 		previousArea = CreateRectangleArea(previousCell);
 		currentArea = CreateRectangleArea(currentCell);
+		
+		// clear build flag
 		canBuild = true;
+
+		bool isInBuildingsPositions = false;
 		foreach (Vector2Int previousAreaCell in previousArea.allPositionsWithin) {
-			bool includes = false;
 			foreach (Vector2Int currentAreaCell in currentArea.allPositionsWithin) {
-				bool isInBuildingsPositions = GameStore.GetAllBuildingsPositions().Contains(currentAreaCell);
+				isInBuildingsPositions = GameStore.GetAllBuildingsPositions().Contains(currentAreaCell);
 				if (isInBuildingsPositions) {
 					canBuild = false;
-				}
-				if (previousAreaCell == currentAreaCell) {
-					includes = true;
-					if (isInBuildingsPositions) {
-						hoverTileMap.SetTile((Vector3Int) currentAreaCell, hoverTileDenied);
-					} else {
-						hoverTileMap.SetTile((Vector3Int) currentAreaCell, hoverTile);
-					}
 					break;
 				}
-
-				if (isInBuildingsPositions) {
-					hoverTileMap.SetTile((Vector3Int) currentAreaCell, hoverTileDenied);
-				} else {
-					hoverTileMap.SetTile((Vector3Int) currentAreaCell, hoverTile);
-				}
 			}
-			if (!includes) hoverTileMap.SetTile((Vector3Int) previousAreaCell, null);
+
+			hoverTileMap.SetTile((Vector3Int) previousAreaCell, null);
+			if (isInBuildingsPositions || !Economy.CanBuy(selectedBuildingUnit.price)) {
+				TileHelper.SetTiles(hoverTileMap, hoverTileDenied, currentArea);
+			} else {
+				hoverTileMap.SetTile(currentCell, currentBuildingTile);
+			}
 		}
 	}
 	
 	public void ResetBuildBound() {
-		foreach (var position in hoverTileMap.cellBounds.allPositionsWithin) {
+		foreach (Vector3Int position in hoverTileMap.cellBounds.allPositionsWithin) {
 			hoverTileMap.SetTile(position, null);
 		}
 	}

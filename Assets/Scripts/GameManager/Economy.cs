@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Economy : MonoBehaviour {
-	public static Economy instance;
+	private static Economy instance;
 	private int coins = 10000;
 
 	private void Awake() {
@@ -19,5 +18,9 @@ public class Economy : MonoBehaviour {
 
 	public static int GetCoinsValue() {
 		return instance.coins;
+	}
+
+	public static bool CanBuy(int cost) {
+		return cost <= instance.coins;
 	}
 } 

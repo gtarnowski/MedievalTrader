@@ -21,15 +21,11 @@ public class CameraController : MonoBehaviour {
 	private float xPos;
 	private Vector3 position;
 
-	public Tilemap groundTileMap;
-	private Bounds tileMapBounds;
-
 	private void Start() {
-		disableController = true;
+		disableController = false;
 		yPos = mainCamera.transform.position.y;
 		xPos = mainCamera.transform.position.x;
 		position = new Vector3(xPos, yPos, mainCamera.transform.position.z);
-		tileMapBounds = groundTileMap.localBounds;
 	}
 
 	private void Update() {

@@ -7,7 +7,6 @@ public class InjectResources : MonoBehaviour {
 	public GameObject injectedResources;
 
 	void Start() {
-		print(1);
 		Units resources = GameData.GetUnitByType(ModelType.Resources);
 		CreateResourcesPrefabs(resources);
 	}

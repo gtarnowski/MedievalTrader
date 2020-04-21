@@ -2,19 +2,24 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Building
-    - BuildingTypes
+    - BuildingDialogCategories
+    - BuildingModeDialog
     - CameraController
     - Details
     - Economy
     - GameData
     - GameManager
+    - GameStore
     - GameTime
     - GeneralEvents
     - GridBuildMode
+    - Helpers
     - InjectResources
     - ManageDialog
     - MapInspector
+    - MouseMoveController
     - Resource
+    - SerializeSprite
     - Tooltip
     - TopBar
     Unity.2D.Tilemap.Editor.dll:
@@ -27,8 +32,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
+    Unity.2D.Tilemap.Extras.Editor.dll:
+    - UnityEditor.Tilemaps.CoordinateBrush
+    - UnityEditor.Tilemaps.GameObjectBrush
+    - UnityEditor.Tilemaps.GroupBrush
+    - UnityEditor.Tilemaps.LineBrush
+    - UnityEditor.Tilemaps.RandomBrush
+    - UnityEditor.Tilemaps.TintBrush
+    - UnityEditor.Tilemaps.TintBrushSmooth
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -46,10 +57,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -80,69 +89,75 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 600}
+      Script: {instanceID: 602}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9702}
     - Class: 114
-      Script: {instanceID: 9786}
+      Script: {instanceID: 9790}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 9894}
+      Script: {instanceID: 9902}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9926}
     - Class: 114
-      Script: {instanceID: 9976}
+      Script: {instanceID: 9932}
     - Class: 114
-      Script: {instanceID: 10240}
+      Script: {instanceID: 9988}
     - Class: 114
-      Script: {instanceID: 10292}
+      Script: {instanceID: 10074}
     - Class: 114
-      Script: {instanceID: 10338}
+      Script: {instanceID: 10268}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 10406}
+      Script: {instanceID: 10368}
     - Class: 114
-      Script: {instanceID: 10488}
+      Script: {instanceID: 10412}
     - Class: 114
-      Script: {instanceID: 10662}
+      Script: {instanceID: 10438}
     - Class: 114
-      Script: {instanceID: 10728}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10738}
+      Script: {instanceID: 10536}
     - Class: 114
-      Script: {instanceID: 10810}
+      Script: {instanceID: 10702}
     - Class: 114
-      Script: {instanceID: 10986}
+      Script: {instanceID: 10772}
     - Class: 114
-      Script: {instanceID: 11020}
+      Script: {instanceID: 10782}
     - Class: 114
-      Script: {instanceID: 11068}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 11082}
+      Script: {instanceID: 11038}
     - Class: 114
-      Script: {instanceID: 11122}
+      Script: {instanceID: 11072}
     - Class: 114
-      Script: {instanceID: 11210}
+      Script: {instanceID: 11120}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11134}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11268}
+    - Class: 114
+      Script: {instanceID: 11282}
     - Class: 114
       Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11348}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11420}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11864}
     - Class: 114
-      Script: {instanceID: 14774}
+      Script: {instanceID: 11916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,10 +205,16 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 13ff0d518a94b128c7f4bcceaac5995c
+      Hash: 6fb2fddc35c836380554a40bcacb17a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BuildingTypes
+    className: BuildingDialogCategories
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TileHelper
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -244,6 +265,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseMoveController
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -268,6 +295,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 92583f5c853ea78ec8d05eed0dcbb497
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: RandomTile
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -280,6 +313,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: fd63958a1a638fc971ff8bf39be32efc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameStore
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -290,6 +329,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a6b2af559224144de517faf1083543fb
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: AdvancedRuleOverrideTile
+  - hash:
+      serializedVersion: 2
+      Hash: 416c1816ed1839dc486d5c35d86ee97e
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine
+    className: RuleTile
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -322,7 +373,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: bdd2156f10c5052dd0a0a6d78773c0b6
+      Hash: f8e843c23bd1b849c30707ebe4c6b4c2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Details
@@ -388,10 +439,22 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: ab6a2fed0a3d86e42cbaa680bbf9bfac
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: AnimatedTile
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Resource
+  - hash:
+      serializedVersion: 2
+      Hash: b5b790f91474bf422cb64c1c245591e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SerializeSprite
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -412,7 +475,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 961f4ff3209aaeefecfee71f97bf5ec6
+      Hash: 710f043247253e623fbde90244c09d96
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GridBuildMode
@@ -430,7 +493,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 2a6505ea69568ff23a78dfed16654e5c
+      Hash: 6299f2cab7b49afbcf08b4c0917ba5b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ManageDialog
@@ -440,6 +503,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7ba35897a6eb27627ed456c682c34253
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: PipelineTile
+  - hash:
+      serializedVersion: 2
+      Hash: ba62abe34655d7e7cd27c0bf1fa1b39d
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: RuleOverrideTile
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -460,13 +535,19 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: d99dcc4cc42dfbdca57e2d9dc32bb0e2
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine
+    className: HexagonalRuleTile
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 08cf25cfd5e4e9c9f6e1b336c343ca71
+      Hash: 82f54d9f1a3d2bd138f471ebbdc1bb4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapInspector
@@ -526,13 +607,19 @@ ScriptsOnlyBuild:
     className: Building
   - hash:
       serializedVersion: 2
+      Hash: cdf089f6cdbdaf804990606672273b73
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: WeightedRandomTile
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: a0546a79052ad157d89cb7d7039aadf4
+      Hash: bc56aeb59df30a8ab7619e7fb527af20
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameData
@@ -544,10 +631,28 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 84454a02056ddc98a4b98c3ddf866191
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuildingModeDialog
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Helpers
+  - hash:
+      serializedVersion: 2
+      Hash: 416c1816ed1839dc486d5c35d86ee97e
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine
+    className: IsometricRuleTile
+  - hash:
+      serializedVersion: 2
+      Hash: 3b3bf14021899a113dbb5c9e4f0d86ad
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: GridInformation
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -572,6 +677,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 490a4632ae50fb0b65bba5aaaf7edebd
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: 
+    className: TintTextureGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: 7ba35897a6eb27627ed456c682c34253
+    assemblyName: Unity.2D.Tilemap.Extras.dll
+    namespaceName: UnityEngine.Tilemaps
+    className: TerrainTile
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb

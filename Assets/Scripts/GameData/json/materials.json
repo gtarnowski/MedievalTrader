@@ -1,13 +1,28 @@
 {
   "materials": [
     {
-      "id": 100,
-      "name": "Steel Bar",
-      "spriteName": "steel_bar",
-      "productionCost": 10,
-      "building": {
-        "id": 10
-      }
+      "id": 1,
+      "name": "Wood Plank",
+      "spriteName": "wood_plank",
+      "productionCost": 80,
+      "requiredResources": [
+        {
+          "id": 1,
+          "count": 1
+        }
+      ] 
+    },
+    {
+      "id": 2,
+      "name": "Iron Bar",
+      "spriteName": "Iron_bar",
+      "productionCost": 100,
+      "requiredResources": [
+        {
+          "id": 2,
+          "count": 1
+        }
+      ]
     }
   ]
 }

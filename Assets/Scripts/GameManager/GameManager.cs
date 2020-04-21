@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 	public ManageDialog manageDialog;
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
-			mainCamera.GetComponent<CameraController>().SetDisableController();
+			// mainCamera.GetComponent<CameraController>().SetDisableController();
 			manageDialog.OnToggleDialog(true);
 		}
 
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 	}
 	private void OnGUI() {
 		if (Event.current.type == EventType.MouseDown) {
-			mainCamera.GetComponent<CameraController>().SetDisableController();
+			// mainCamera.GetComponent<CameraController>().SetDisableController();
 		}
 	}
 }

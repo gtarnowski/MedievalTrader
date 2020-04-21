@@ -6,6 +6,7 @@ public class Units {
 	public Unit[] products;
 	public Unit[] resources;
 	public Unit[] buildings;
+	public Unit[] manufacturing;
 
 	public static Unit FindUnit(Unit[] units, string unitTileName) {
 		foreach (var unit in units) {

@@ -3,4 +3,5 @@ public enum ModelType {
 	Materials,
 	Products,
 	Resources,
+	Manufacturing
 }
