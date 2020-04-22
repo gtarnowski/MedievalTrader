@@ -37,4 +37,5 @@ public class Details : MonoBehaviour {
 		}
 		return isOverlappingWithAnyDimensions;
 	}
+	
 }

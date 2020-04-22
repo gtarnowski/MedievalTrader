@@ -3,22 +3,30 @@
     {
       "id": 1,
       "name": "Bucket",
-      "spriteName": "bucket"
+      "spriteName": "bucket",
+      "buildingId": 10,
+      "type": "Product"
     },
     {
       "id": 2,
       "name": "Woodcutter Axe",
-      "spriteName": "woodcutter_axe"
+      "spriteName": "woodcutter_axe",
+      "buildingId": 10,
+      "type":  "Product"
     },
     {
       "id": 3,
       "name": "Chest Box",
-      "spriteName": "chest_box"
+      "spriteName": "chest_box",
+      "buildingId": 10,
+      "type":  "Product"
     },
     {
       "id": 4,
       "name": "Arrow",
-      "spriteName": "arrow"
+      "spriteName": "arrow",
+      "buildingId": 8,
+      "type":  "Product"
     }
   ]
 }

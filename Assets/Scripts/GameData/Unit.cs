@@ -24,6 +24,12 @@ public class Unit {
 	public string productName;
 	public int buildingId;
 	public RequiredMaterials[] requiredMaterials;
+	
+	// For mines
+	public int[] resources;
+	public int materialId;
+
+	public int range;
 }
 
 [System.Serializable]

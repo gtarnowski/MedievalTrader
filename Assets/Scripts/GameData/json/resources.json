@@ -6,7 +6,8 @@
       "spriteName": "tree",
       "count": 500,
       "size": 1,
-      "type": "Resource"
+      "type": "Resource",
+      "buildingId": 1
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "spriteName": "iron_ore",
       "count": 800,
       "size": 1,
-      "type": "Resource"
+      "type": "Resource",
+      "buildingId": 2
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "spriteName": "copper_ore",
       "count": 800,
       "size": 1,
-      "type": "Resource"
+      "type": "Resource",
+      "buildingId": 2
     }
   ]
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class BuildingDialogCategories : MonoBehaviour {
 	public GameObject buttonPrefab;
 	public BuildingModeDialog buildingModeDialog;
 	public GridBuildMode gridBuildMode;
+	public List<GameObject> buildingsPrefabs;
 	
 	[Header("Layouts")]
 	public GameObject minesLayout;
@@ -18,12 +20,6 @@ public class BuildingDialogCategories : MonoBehaviour {
 	public GameObject stablesLayout;
 
 	private Image currentButtonImage;
-	private Color gray = new Color(
-		(float) 0.4745098,
-		(float)0.4745098,
-		(float)0.4745098,
-		(float) 0.2980392
-	);
 
 	private GameObject selectedCategory;
 	
@@ -31,6 +27,8 @@ public class BuildingDialogCategories : MonoBehaviour {
 		// Get buildings from library, picked from JSON
 		buildings = GameData.GetUnitByType(ModelType.Buildings);
 		
+		gridBuildMode.SetSelectedBuilding(buildings.buildings[0]);
+		int index = 0;
 		foreach (var building in buildings.buildings) {
 			// Get Layout to inject button
 			GameObject buildingTypeLayout = GetLayout(building.category);
@@ -38,25 +36,28 @@ public class BuildingDialogCategories : MonoBehaviour {
 			GameObject button = Instantiate(buttonPrefab, buildingTypeLayout.transform, true);
 			button.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
 			// buildingModeDialog.SelectFirstBuildingInCategory();
-			gridBuildMode.SetSelectedBuilding(building);
+			if (index == 0) {
+				button.GetComponent<Image>().color = Color.red;
+			}
+			// Load icon sprite and assign to icon button
+			Sprite buttonIconSprite = GameSprites.GetIconByName(building.spriteName);
+			button.transform.GetChild(0).GetComponent<Image>().sprite = buttonIconSprite;
+
 			button.GetComponent<Button>().onClick.AddListener(() => {
 				gridBuildMode.SetSelectedBuilding(building);
 				gridBuildMode.ResetBuildBound();
 				gridBuildMode.RefreshBuildBound();
-				
-				buildingModeDialog.currentBuildingCategory.transform.GetChild(0).GetComponent<Image>().color = gray;
+				gridBuildMode.buildingPrefab = buildingsPrefabs.Find((prefab) => prefab.name == building.category);
+				buildingModeDialog.currentBuildingCategory.transform.GetChild(0).GetComponent<Image>().color = Color.gray;
 				if (currentButtonImage) {
-					currentButtonImage.color = gray;
+					currentButtonImage.color = Color.gray;
 				}
 				
 				currentButtonImage = button.GetComponent<Image>();
 				currentButtonImage.color = Color.red;
 			});
+			index++;
 		}
-	}
-
-	private void Update() {
-		print(selectedCategory.name);
 	}
 
 	private GameObject GetLayout(string layoutName) {

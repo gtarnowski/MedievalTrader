@@ -56,7 +56,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BuildingDetailsDialog.cs" />
      <Compile Include="Assets\BuildingModeDialog.cs" />
+     <Compile Include="Assets\Scripts\Buildings\Building.cs" />
+     <Compile Include="Assets\Scripts\Buildings\Farms.cs" />
+     <Compile Include="Assets\Scripts\Buildings\IndustryBuildings.cs" />
+     <Compile Include="Assets\Scripts\Buildings\Mines.cs" />
+     <Compile Include="Assets\Scripts\Buildings\Stables.cs" />
+     <Compile Include="Assets\Scripts\Buildings\Warehouses.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MouseMoveController.cs" />
      <Compile Include="Assets\Scripts\Enums\AlertMessages.cs" />
@@ -65,6 +72,7 @@
      <Compile Include="Assets\Scripts\Enums\ModelType.cs" />
      <Compile Include="Assets\Scripts\Enums\UnitType.cs" />
      <Compile Include="Assets\Scripts\GameData\GameData.cs" />
+     <Compile Include="Assets\Scripts\GameData\GameSprites.cs" />
      <Compile Include="Assets\Scripts\GameData\InjectResources.cs" />
      <Compile Include="Assets\Scripts\GameData\Unit.cs" />
      <Compile Include="Assets\Scripts\GameData\Units.cs" />
@@ -77,7 +85,6 @@
      <Compile Include="Assets\Scripts\Grid\MapInspector.cs" />
      <Compile Include="Assets\Scripts\Helpers\Helpers.cs" />
      <Compile Include="Assets\Scripts\Helpers\TileHelper.cs" />
-     <Compile Include="Assets\Scripts\Models\Building.cs" />
      <Compile Include="Assets\Scripts\Models\Details.cs" />
      <Compile Include="Assets\Scripts\Models\Resource.cs" />
      <Compile Include="Assets\Scripts\UI\Alert.cs" />

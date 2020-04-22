@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour {
 	public bool disableController;
 	public bool disableEdgeScroll = true;
 
-	private float zoom = 5f;
+	private float zoom = 6f;
 	
 	private float yPos;
 	private float xPos;

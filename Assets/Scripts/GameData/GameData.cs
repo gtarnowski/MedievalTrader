@@ -6,20 +6,21 @@ public class GameData : MonoBehaviour {
   public TextAsset resourcesJsonFile;
   public TextAsset buildingsJsonFile;
   public TextAsset productsJsonFile;
-  public TextAsset manufacturingJsonFile;
+  public TextAsset processesJsonFile;
 
   private Units materialsJson;
   private Units resourcesJson;
   private Units buildingsJson;
   private Units productsJson;
-  private Units manufacturingJson;
+  private Units processesJson;
 
   void Awake() {
     instance = this;
     ReadMaterials();
     ReadBuildings();
     ReadResources();
-    ReadManufacturing();
+    ReadProducts();
+    ReadProcesses();
   }
   
   private void ReadMaterials() {
@@ -38,8 +39,8 @@ public class GameData : MonoBehaviour {
     productsJson = JsonUtility.FromJson<Units>(productsJsonFile.text);
   }
 
-  private void ReadManufacturing() {
-    manufacturingJson = JsonUtility.FromJson<Units>(manufacturingJsonFile.text);
+  private void ReadProcesses() {
+    processesJson = JsonUtility.FromJson<Units>(processesJsonFile.text);
   }
 
   public static Units GetUnitByType(ModelType type) {
@@ -48,7 +49,7 @@ public class GameData : MonoBehaviour {
       case ModelType.Materials: return instance.materialsJson;
       case ModelType.Products: return instance.productsJson;
       case ModelType.Resources: return instance.resourcesJson;
-      case ModelType.Manufacturing: return instance.manufacturingJson;
+      case ModelType.Processes: return instance.processesJson;
       default: return null;
     }
   }

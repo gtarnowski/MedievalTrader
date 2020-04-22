@@ -1,38 +1,15 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ManageDialog : MonoBehaviour {
+	public TextMeshProUGUI dialogTitle;
 	public DialogType dialogType;
 	private bool isPointerOverGameObject;
-
-	// private void Awake() => OnSetBuildingCategory(defaultDialog);
 
 	private void Update() {
 		isPointerOverGameObject = EventSystem.current.IsPointerOverGameObject();
 	}
-
-	// public void OnSetBuildingCategory(GameObject dialog) {
-	// 	defaultDialog.SetActive(false);
-	// 	GameObject.Find("MinesButton").GetComponent<Image>().color = Color.white;
-	// 	
-	// 	if (buildingCategoryDialog) {
-	// 		buildingCategoryDialog.SetActive(false);
-	// 	}
-	// 	dialog.SetActive(true);
-	//
-	// 	buildingCategoryDialog = dialog;
-	// }
-
-	// public void OnSetSelectedCategoryButton(Image buttonImage) {
-	// 	if (currentButtonImage) {
-	// 		currentButtonImage.color = Color.white;
-	// 	}
-	// 	currentButtonImage = buttonImage;
-	// 	currentButtonImage.color = Color.red;
-	// }
-
-	// forceClose allows to skip opening dialog and connected action.
-	// Dialog can be closed only.
 	public void OnToggleDialog(bool forceClose) {
 		bool isBuildingModeDialog = dialogType.Equals(DialogType.BuildingModeDialog);
 		GameStore.SetOpenedDialog(dialogType);
@@ -57,4 +34,6 @@ public class ManageDialog : MonoBehaviour {
 	}
 
 	public bool IsPointerOverBuildingDialog() => isPointerOverGameObject;
+
+	public bool IsDialogOpened() => gameObject.activeSelf;
 }

@@ -6,8 +6,17 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BuildingDetailsDialog.cs" t="Include" />
         <e p="BuildingModeDialog.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Buildings" t="Include">
+            <e p="Building.cs" t="Include" />
+            <e p="Farms.cs" t="Include" />
+            <e p="IndustryBuildings.cs" t="Include" />
+            <e p="Mines.cs" t="Include" />
+            <e p="Stables.cs" t="Include" />
+            <e p="Warehouses.cs" t="Include" />
+          </e>
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="MouseMoveController.cs" t="Include" />
@@ -21,6 +30,7 @@
           </e>
           <e p="GameData" t="Include">
             <e p="GameData.cs" t="Include" />
+            <e p="GameSprites.cs" t="Include" />
             <e p="InjectResources.cs" t="Include" />
             <e p="Unit.cs" t="Include" />
             <e p="Units.cs" t="Include" />
@@ -41,7 +51,6 @@
             <e p="TileHelper.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
-            <e p="Building.cs" t="Include" />
             <e p="Details.cs" t="Include" />
             <e p="Resource.cs" t="Include" />
           </e>
