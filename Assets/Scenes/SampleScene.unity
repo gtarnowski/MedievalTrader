@@ -1369,16 +1369,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728463083}
-        m_MethodName: OnConfirmDialog
-        m_Mode: 1
+      - m_Target: {fileID: 728463082}
+        m_MethodName: OnToggleDialog
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &274075320
 GameObject:
@@ -36727,7 +36727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07450981, g: 0.10980392, b: 0.14509805, a: 1}
+  m_Color: {r: 0.13725491, g: 0.17254902, b: 0.20392157, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36776,12 +36776,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec88ca4cfa4949ca8c04237c15ca3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsIconsLayout: {fileID: 383061823}
   optionsWithCategoriesGameObject: {fileID: 329744696}
   optionsIconsGameObject: {fileID: 383061821}
   productsIconsGameObject: {fileID: 310272627}
   materialsIconsGameObject: {fileID: 1670150601}
-  buttonPrefab: {fileID: 1120385569074048603, guid: 43226a8ffde4a491c9c455ee1ddac1fe,
+  buttonPrefab: {fileID: 1120385569074048603, guid: 63377e3059482429cb34938277841a60,
+    type: 3}
+  counterButtonPrefab: {fileID: 1120385569074048603, guid: 43226a8ffde4a491c9c455ee1ddac1fe,
     type: 3}
   options: []
   buttons: []
@@ -37429,7 +37430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07450981, g: 0.10980392, b: 0.14509805, a: 1}
+  m_Color: {r: 0.13725491, g: 0.17254902, b: 0.20392157, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

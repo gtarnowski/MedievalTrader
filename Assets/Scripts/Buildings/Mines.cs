@@ -31,6 +31,9 @@ public class Mines : MonoBehaviour {
 	private void FinalizeProduction() {
 		ReduceResources();
 		ReduceCoins();
+		
+		WarehouseDistance warehouseDistance = Warehouses.FindClosestWarehouse(GetComponent<Details>().dimensions);
+		print("Distance: " + warehouseDistance.distance);
 	}
 	
 	private void ReduceCoins() {
@@ -72,13 +75,11 @@ public class Mines : MonoBehaviour {
 					totalResources.Add(new MineResource {id = resourceDetails.unit.id, count = resourceDetails.unit.count});
 				} else {
 					// Pick resource by id and add resources count
-					MineResource includedResource = totalResources.Find(resource => resource.id == resourceDetails.unit.id);
+					MineResource includedResource =
+						totalResources.Find(resource => resource.id == resourceDetails.unit.id);
 					includedResource.count += resourceDetails.unit.count;
 				}
 			}
-			
-			// Add building position/bound to list
-			GameStore.SetBuildingPosition(boundCell);
 		}
 	}
 
@@ -90,3 +91,4 @@ public class MineResource {
 	public int id;
 	public int count;
 }
+

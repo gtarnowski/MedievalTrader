@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using VSCodeEditor;
 
 public class BuildingDetailsDialog : MonoBehaviour {
 	public GameObject optionsWithCategoriesGameObject;
@@ -9,6 +10,7 @@ public class BuildingDetailsDialog : MonoBehaviour {
 	public GameObject materialsIconsGameObject;
 	
 	public GameObject buttonPrefab;
+	public GameObject counterButtonPrefab;
 	
 	public List<Unit> options;
 	
@@ -34,9 +36,12 @@ public class BuildingDetailsDialog : MonoBehaviour {
 		details = building.GetComponent<Details>();
 		GetComponent<ManageDialog>().dialogTitle.text = details.unit.name;
 		
-		if (details.unit.category == BuildingCategory.Mines.ToString()) {
+		options = new List<Unit>();
+		if (Utils.IsMine(details.unit.category)) {
 			GetOptionsByCollection(GameData.GetUnitByType(ModelType.Materials).materials, false);
-		} else if (details.unit.category == BuildingCategory.Warehouses.ToString()) {
+		}
+
+		if (Utils.IsWarehouse(details.unit.category)) {
 			GetOptionsByCollection(GameData.GetUnitByType(ModelType.Products).products, true);
 			GetOptionsByCollection(GameData.GetUnitByType(ModelType.Materials).materials, true);
 		}
@@ -47,7 +52,7 @@ public class BuildingDetailsDialog : MonoBehaviour {
 	private void RenderOptionIcons() {
 		foreach (var option in options) {
 			GameObject button = Instantiate(
-				buttonPrefab,
+				details.unit.category == nameof(BuildingCategory.Warehouses) ? counterButtonPrefab : buttonPrefab,
 				GetObjectLayoutByBuildingCategory(details.unit.category, option),
 				true
 			);
@@ -58,13 +63,14 @@ public class BuildingDetailsDialog : MonoBehaviour {
 				CallActionByBuildingCategory(details.unit.category, option);
 			});
 		}
+
+		if (Utils.IsWarehouse(details.unit.category)) {
+			GetComponent<Warehouses>().AssignButtons(buttons);
+		}
 	}
 
 
 	private void GetOptionsByCollection(Unit[] collection, bool isWarehouse) {
-		if (!isWarehouse) {
-			options = new List<Unit>();
-		}
 		foreach (var collectionItem in collection) {
 			if (collectionItem.buildingId == details.unit.id || isWarehouse) {
 				options.Add(collectionItem);
@@ -73,23 +79,18 @@ public class BuildingDetailsDialog : MonoBehaviour {
 	}
 
 	private void CallActionByBuildingCategory(string category, Unit option) {
-		if (category == BuildingCategory.Warehouses.ToString()) {
+		if (Utils.IsWarehouse(category)) {
 			Warehouses warehouses = building.GetComponent<Warehouses>();
-			warehouses.OnChangeStorePreferences();
-		}
-		if (category == BuildingCategory.Mines.ToString()) {
-			Mines mines = building.GetComponent<Mines>();
-			mines.OnSetSelectedOption(option);
+			warehouses.OnChangeStorePreferences(option);
 			return;
 		}
-		if (category == BuildingCategory.IndustryBuildings.ToString()) {
-			return;
-		}
-		return;
+		
+		Mines mines = building.GetComponent<Mines>();
+		mines.OnSetSelectedOption(option);
 	}
 
 	private Transform GetObjectLayoutByBuildingCategory(string category, Unit option) {
-		if (category == BuildingCategory.Warehouses.ToString()) {
+		if (Utils.IsWarehouse((category))) {
 			optionsWithCategoriesGameObject.SetActive(true);
 			optionsIconsGameObject.SetActive(false);
 			
@@ -99,12 +100,9 @@ public class BuildingDetailsDialog : MonoBehaviour {
 
 			return productsIconsGameObject.transform;
 		}
-		if (category == BuildingCategory.Mines.ToString()) {
-			optionsWithCategoriesGameObject.SetActive(false);
-			optionsIconsGameObject.SetActive(true);
-			return optionsIconsGameObject.transform;
-		}
-
-		return null;
-	} 
+		
+		optionsWithCategoriesGameObject.SetActive(false);
+		optionsIconsGameObject.SetActive(true);
+		return optionsIconsGameObject.transform;
+	}
 }

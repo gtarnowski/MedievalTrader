@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Farms
     - GameData
     - GameManager
+    - GameSprites
     - GameStore
     - GameTime
     - GeneralEvents
@@ -23,7 +24,6 @@ ScriptsOnlyBuild:
     - Mines
     - MouseMoveController
     - Resource
-    - SerializeSprite
     - Stables
     - Tooltip
     - TopBar
@@ -77,6 +77,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -89,6 +90,8 @@ ScriptsOnlyBuild:
     - Class: 21
       Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -119,6 +122,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10074}
     - Class: 114
+      Script: {instanceID: 10076}
+    - Class: 114
       Script: {instanceID: 10268}
     - Class: 114
       Script: {instanceID: 10322}
@@ -130,8 +135,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10438}
     - Class: 114
       Script: {instanceID: 10522}
-    - Class: 114
-      Script: {instanceID: 10536}
     - Class: 114
       Script: {instanceID: 10702}
     - Class: 114
@@ -186,6 +189,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 21386}
     - Class: 114
       Script: {instanceID: 40816}
+    - Class: 114
+      Script: {instanceID: 114398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -401,7 +406,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: b6fac953c4bab6739b517384b2a603df
+      Hash: bed6d26ade4ea82528580bade118b61d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Details
@@ -629,7 +634,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: dd9eeb53ce343e3a7d57e93e791cadce
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Building
@@ -833,7 +838,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: c56c9f248ea30fe4a2b40768a24f8717
+      Hash: 065396dd0426252d1661d8469dbd8046
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mines
@@ -851,7 +856,7 @@ ScriptsOnlyBuild:
     className: IndustryBuildings
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 44e3448a2e0e7ef0243ffc1551a807e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Warehouses
@@ -863,10 +868,16 @@ ScriptsOnlyBuild:
     className: Stables
   - hash:
       serializedVersion: 2
-      Hash: 5e5d125949b0b6363daa05116ac5dc1d
+      Hash: a9244612673b8d3a40d57223bc06273a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuildingDetailsDialog
+  - hash:
+      serializedVersion: 2
+      Hash: a629a558e80216b296db4d3d0c7d3cb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameSprites
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

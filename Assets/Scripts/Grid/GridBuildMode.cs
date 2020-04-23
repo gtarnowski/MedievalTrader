@@ -58,9 +58,14 @@ public class GridBuildMode : MonoBehaviour {
 		);
 		
 		buildingsTileMap.SetTile(currentCell, currentBuildingTile);
-		
+		// GameStore.SetBuildingPosition(currentArea);
 		newBuildingObject.GetComponent<Building>()
 			.SetInitialValues(currentArea, resourcesMap, selectedBuildingUnit);
+
+		foreach(var boundCell in currentArea.allPositionsWithin) {
+			// Add building position/bound to list
+			GameStore.SetBuildingPosition(boundCell);
+		}
 	}
 
 	public void RefreshBuildBound() {

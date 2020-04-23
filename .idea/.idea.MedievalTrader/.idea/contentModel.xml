@@ -49,6 +49,7 @@
           <e p="Helpers" t="Include">
             <e p="Helpers.cs" t="Include" />
             <e p="TileHelper.cs" t="Include" />
+            <e p="Utils.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
             <e p="Details.cs" t="Include" />

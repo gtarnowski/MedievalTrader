@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{AA3A8338-2431-BFBF-012D-C380C25FAC88}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BuildingDetailsDialog.cs">
+    <Files>
+      <File FileName="Assets/BuildingModeDialog.cs" Line="19" Column="59" />
+      <File FileName="Assets/BuildingDetailsDialog.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MedievalTrader" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="BuildingDetailsDialog.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d4fde5f5-ae00-4d37-9b06-0b6e5c62b889" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
